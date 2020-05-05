@@ -6,6 +6,7 @@ namespace CommandGamePP1
     {
         static void Main(string[] args)
         {
+            // Just testing the updates
             Console.WriteLine("Hello World!");
         }
     }
