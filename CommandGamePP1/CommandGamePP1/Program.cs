@@ -35,9 +35,6 @@ namespace CommandGamePP1
 
             string[] correctpath = { "6", "4", "6", "4", "4", "3", "4", "5", "4", "2", "3", "1", "2", "4", "4" };
             // 646443454231244 is the maze image path to the end
-            //test
-            string[] items = { "item1", "item2" };
-            //not actual names for items but just a test
 
             do
             {
