@@ -38,7 +38,15 @@ namespace CommandGamePP1
 
             do
             {
-                Console.WriteLine("Pick a path. 1-6");
+                switch (room)
+                {
+                    case 0:
+                        Console.WriteLine("Pick a path. 1-6 // room 0//");
+                        break;
+                    case 1:
+                        Console.WriteLine("Pick a path. 1-6 // room 1//");
+                        break;
+                }
                 string path = Console.ReadLine();
                 Console.WriteLine();
                 switch (path)
