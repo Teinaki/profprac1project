@@ -1,0 +1,61 @@
+using System;
+using System.Threading;
+namespace ideaForMazeContent
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        
+            Console.WriteLine("You are now in the blue room. You are surrounded by water and there is a small motor boat nearby.");
+            Thread.Sleep(2000);
+            Console.WriteLine ("Suddenly, you notice a hungry, killer shark in the water! Oh no!");
+            Thread.Sleep(2000);
+            Console.Clear();
+            Room1Start:
+            Console.WriteLine("Select an item from your inventory to save you from the shark. A) Can of Tuna B) Flashlight C) Knife D) Big Stick");
+            ConsoleKeyInfo selection = Console.ReadKey();
+            
+                if (selection.Key == ConsoleKey.A)
+            {
+                Console.WriteLine(" ");
+                Console.WriteLine("You selected the Can of Tuna.");
+                Console.WriteLine("Uh oh! Sharks don't eat tuna! Try again.");
+                Thread.Sleep(3000);
+                Console.Clear();
+                goto Room1Start;
+            }
+           if (selection.Key == ConsoleKey.B)
+            {
+                Console.WriteLine(" ");
+                Console.WriteLine("You selected the Flashlight");
+                Console.WriteLine("The flashlight draws the shark towards you. Bad idea! Try again.");
+                Thread.Sleep(3000);
+                Console.Clear();
+                goto Room1Start;
+            }
+           if (selection.Key == ConsoleKey.C)
+            {
+                Console.WriteLine(" ");
+                Console.WriteLine("You selected the Knife.");
+                Console.WriteLine("You cannot fight off a shark with a knife! Try again.");
+                Thread.Sleep(3000);
+                Console.Clear();
+                goto Room1Start;
+            }
+            if (selection.Key == ConsoleKey.D)
+            {
+                Console.WriteLine(" ");
+                Console.WriteLine("You have selected the Big Stick.");
+                Console.WriteLine("You boink the shark in the nose with your stick.");
+                Console.WriteLine("While he is distracted, you jump into the boat and make it to the other side.");
+                Console.WriteLine("On to the next room!");
+                Thread.Sleep(3000);
+                Console.Clear();
+            }
+
+
+         
+            }
+    }
+}
