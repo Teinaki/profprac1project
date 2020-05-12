@@ -97,8 +97,15 @@ namespace CommandGamePP1
                 case "4":
                     if (path == correctpath[room])
                     {
-                        Console.WriteLine("Correct path");
-                        room++;
+                        if (room != 6)
+                        {
+                            Console.WriteLine("Correct path");
+                            room++;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Door is locked"); //Stuck right now, need to work on key code to progress maze
+                        }
                     }
                     break;
                 case "5":
