@@ -18,46 +18,60 @@ namespace CommandGamePP1
                     Console.WriteLine("Press the corresponding number to go through \n1) Red door.  2) Orange door.  3) Yellow door.  4) Green door.  5) Blue door.  6) Purple door.");
                     break;
                 case 1:
-                    Console.WriteLine("Pick a path. 1-6 // room 1//");
+                    Console.WriteLine("Select from the following:    ");
+                    Console.WriteLine("1) Black door. 2) White door. 3) Rainbow door. 4) Silver door. 5) Gold door. ");
                     break;
                 case 2:
-                    Console.WriteLine("Pick a path. 1-6 // room 2//");
+                    Console.WriteLine("Select from the following:    ");
+                    Console.WriteLine("1) Crimson door. 2) Red-orange door. 3) Maroon door. 4) Scarlet door. 5) Ruby door. 6) Garnet door.");
                     break;
                 case 3:
-                    Console.WriteLine("Pick a path. 1-6 // room 3//");
+                    Console.WriteLine("Select from the following:    ");
+                    Console.WriteLine("1) Tangerine door. 2) Marigold door. 3) Rust door. 4)Ginger door. 5)Apricot door. 6) Honey door.");
                     break;
                 case 4:
-                    Console.WriteLine("Pick a path. 1-6 // room 4//");
+                    Console.WriteLine("Select from the following:    ");
+                    Console.WriteLine("1) Corn door. 2) Honey door. 3) Pineapple door. 4)Amber door. 5) Canary door. 6) Lemon door.");
                     break;
                 case 5:
-                    Console.WriteLine("Pick a path. 1-6 // room 5//");
+                    Console.WriteLine("Select from the following:    ");
+                    Console.WriteLine("1) Olive door. 2) Sage door. 3) Seaweed door. 4) Pickle door. 5) Emerald door. 6) Shamrock door.");
                     break;
                 case 6:
-                    Console.WriteLine("Pick a path. 1-6 // room 6//");
+                    Console.WriteLine("Select from the following:    ");
+                    Console.WriteLine("1) Navy door. 2) Indigo door. 3) Cobalt door. 4) Teal door. 5) Sapphire door. 6) Stone door.");
                     break;
                 case 7:
-                    Console.WriteLine("Pick a path. 1-6 // room 7//");
+                    Console.WriteLine("Select from the following:    ");
+                    Console.WriteLine("1) Mauve door. 2) Volet door. 3) Grape door. 4) Plum door. 5) Wine door. 6) Lilac door.");
                     break;
                 case 8:
-                    Console.WriteLine("Pick a path. 1-6 // room 8//");
+                    Console.WriteLine("Select from the following:    ");
+                    Console.WriteLine("1) Rose door. 2) Peach door. 3) Salmon door. 4) Bubble gum door. 5) Rouge door. 6) Magenta door.");
                     break;
                 case 9:
-                    Console.WriteLine("Pick a path. 1-6 // room 9//");
+                    Console.WriteLine("Select from the following:    ");
+                    Console.WriteLine("1) Carbon door. 2) Wood door. 3) Sand door. 4) Clay door. 5) lava door. 6) Gravel door.");
                     break;
                 case 10:
-                    Console.WriteLine("Pick a path. 1-6 // room 10//");
+                    Console.WriteLine("Select from the following:    ");
+                    Console.WriteLine("1) Diamond door. 2) Pearl door. Press 3) Quartz door. 4) Glass door. 5) Platinum door. 6) Rhodium door.");
                     break;
                 case 11:
-                    Console.WriteLine("Pick a path. 1-6 // room 11//");
+                    Console.WriteLine("Select from the following:    ");
+                    Console.WriteLine("1) Slime door. 2) Snow door. 3) Spiderweb door. 4) Honeycomb door. 5) Leather door. 6) Sponge door.");
                     break;
                 case 12:
-                    Console.WriteLine("Pick a path. 1-6 // room 12//");
+                    Console.WriteLine("Select from the following:    ");
+                    Console.WriteLine("1) Ice door. 2)  Diorite door. 3) Basalt door. 4) Wheat door. 5) Oak door. 6) Soil door.");
                     break;
                 case 13:
-                    Console.WriteLine("Pick a path. 1-6 // room 13//");
+                    Console.WriteLine("Select from the following:    ");
+                    Console.WriteLine("1) Dandelion door. 2) Poppy door. 3) Azure door. 4) Tulip door. 5) Daisy door. 6) Sunflower door.");
                     break;
                 case 14:
-                    Console.WriteLine("Pick a path. 1-6 // room 14//");
+                    Console.WriteLine("Select from the following:    ");
+                    Console.WriteLine("1) Linen door. 2) Cashmere door. 3) Linen door. 4) Jeff 5) Wool door. 6) Cotton door.");
                     break;
                 default:
                     Console.WriteLine("Pick a path. 1-6");
