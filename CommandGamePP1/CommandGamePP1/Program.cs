@@ -10,7 +10,22 @@ namespace CommandGamePP1
             switch (room)
             {
                 case 0:
-                    Console.WriteLine("Pick a path. 1-6 // room 0//");
+                    //Console.WriteLine("Pick a path. 1-6 // room 0//");
+                    Console.WriteLine("Oh no! You have found yourself trapped in a maze.");
+                    Thread.Sleep(2000);
+                    Console.WriteLine("You see multiple doors in front of you. Select from the following:    ");
+                    Thread.Sleep(2000);
+                    Console.WriteLine("Press 1) to go through the red door.");
+                    Thread.Sleep(800);
+                    Console.WriteLine("Press 2) to go through the orange door");
+                    Thread.Sleep(800);
+                    Console.WriteLine("Press 3) to go through the yellow door.");
+                    Thread.Sleep(800);
+                    Console.WriteLine("Press 4) to go through the green door");
+                    Thread.Sleep(800);
+                    Console.WriteLine("Press 5) to go through the blue door.");
+                    Thread.Sleep(800);
+                    Console.WriteLine("Press 6) to go through the purple door");
                     break;
                 case 1:
                     Console.WriteLine("Pick a path. 1-6 // room 1//");
