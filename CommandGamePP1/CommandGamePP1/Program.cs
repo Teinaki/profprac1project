@@ -11,7 +11,6 @@ namespace CommandGamePP1
             switch (room)
             {
                 case 0:
-                    //Console.WriteLine("Pick a path. 1-6 // room 0//");
                     Console.WriteLine("Oh no! You have found yourself trapped in a maze.");
                     Thread.Sleep(2000);
                     Console.WriteLine("You see multiple doors in front of you. Select from the following:    ");
@@ -27,11 +26,11 @@ namespace CommandGamePP1
                     break;
                 case 3:
                     Console.WriteLine("Select from the following:    ");
-                    Console.WriteLine("1) Tangerine door. 2) Marigold door. 3) Rust door. 4)Ginger door. 5)Apricot door. 6) Honey door.");
+                    Console.WriteLine("1) Tangerine door. 2) Marigold door. 3) Rust door. 4)Ginger door. 5) Apricot door. 6) Honey door.");
                     break;
                 case 4:
                     Console.WriteLine("Select from the following:    ");
-                    Console.WriteLine("1) Corn door. 2) Honey door. 3) Pineapple door. 4)Amber door. 5) Canary door. 6) Lemon door.");
+                    Console.WriteLine("1) Corn door. 2) Honey door. 3) Pineapple door. 4) Amber door. 5) Canary door. 6) Lemon door.");
                     break;
                 case 5:
                     Console.WriteLine("Select from the following:    ");
@@ -43,7 +42,7 @@ namespace CommandGamePP1
                     break;
                 case 7:
                     Console.WriteLine("Select from the following:    ");
-                    Console.WriteLine("1) Mauve door. 2) Volet door. 3) Grape door. 4) Plum door. 5) Wine door. 6) Lilac door.");
+                    Console.WriteLine("1) Mauve door. 2) Violet door. 3) Grape door. 4) Plum door. 5) Wine door. 6) Lilac door.");
                     break;
                 case 8:
                     Console.WriteLine("Select from the following:    ");
@@ -77,7 +76,6 @@ namespace CommandGamePP1
                     Console.WriteLine("Pick a path. 1-6");
                     break;
 
-                    //testing
             }
         }
         public static void choices()
