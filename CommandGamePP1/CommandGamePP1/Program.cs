@@ -15,9 +15,50 @@ namespace CommandGamePP1
                 case 1:
                     Console.WriteLine("Pick a path. 1-6 // room 1//");
                     break;
+                case 2:
+                    Console.WriteLine("Pick a path. 1-6 // room 2//");
+                    break;
+                case 3:
+                    Console.WriteLine("Pick a path. 1-6 // room 3//");
+                    break;
+                case 4:
+                    Console.WriteLine("Pick a path. 1-6 // room 4//");
+                    break;
+                case 5:
+                    Console.WriteLine("Pick a path. 1-6 // room 5//");
+                    break;
+                case 6:
+                    Console.WriteLine("Pick a path. 1-6 // room 6//");
+                    break;
+                case 7:
+                    Console.WriteLine("Pick a path. 1-6 // room 7//");
+                    break;
+                case 8:
+                    Console.WriteLine("Pick a path. 1-6 // room 8//");
+                    break;
+                case 9:
+                    Console.WriteLine("Pick a path. 1-6 // room 9//");
+                    break;
+                case 10:
+                    Console.WriteLine("Pick a path. 1-6 // room 10//");
+                    break;
+                case 11:
+                    Console.WriteLine("Pick a path. 1-6 // room 11//");
+                    break;
+                case 12:
+                    Console.WriteLine("Pick a path. 1-6 // room 12//");
+                    break;
+                case 13:
+                    Console.WriteLine("Pick a path. 1-6 // room 13//");
+                    break;
+                case 14:
+                    Console.WriteLine("Pick a path. 1-6 // room 14//");
+                    break;
                 default:
                     Console.WriteLine("Pick a path. 1-6");
                     break;
+
+                    //testing
             }
         }
         public static void choices()
