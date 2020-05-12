@@ -141,6 +141,7 @@ namespace CommandGamePP1
                     Console.WriteLine("Wrong Path value try again");
                     break;
             }                 // If you pick the right path you reach the next 'room' in the maze and go again
+                              // doesnt take back to the start of the maze if you pick wrong path
         }
         static void Main(string[] args)
         {
