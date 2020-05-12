@@ -12,6 +12,7 @@ namespace CommandGamePP1
             {
                 case 0:
                     //Console.WriteLine("Pick a path. 1-6 // room 0//");
+                    //test
                     Console.WriteLine("Oh no! You have found yourself trapped in a maze.");
                     Thread.Sleep(2000);
                     Console.WriteLine("You see multiple doors in front of you. Select from the following:    ");
