@@ -14,7 +14,7 @@ namespace CommandGamePP1
                     Console.WriteLine("Oh no! You have found yourself trapped in a maze.");
                     Thread.Sleep(2000);
                     Console.WriteLine("You see multiple doors in front of you. Select from the following:    ");
-                    Console.WriteLine("Press 1) to go through the red door. \n Press 2) to go through the orange door \n Press 3) to go through the yellow door. \n Press 4) to go through the green door \n Press 5) to go through the blue door. \n Press 6) to go through the purple door");
+                    Console.WriteLine("Press 1) to go through the red door. \n Press 2) to go through the orange door. \n Press 3) to go through the yellow door. \n Press 4) to go through the green door. \n Press 5) to go through the blue door. \n Press 6) to go through the purple door.");
                     break;
                 case 1:
                     Console.WriteLine("Pick a path. 1-6 // room 1//");
