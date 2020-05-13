@@ -5,7 +5,7 @@ namespace CommandGamePP1
 {
     class Program
     {
-        public static int room = 0;
+        public static int room = 0; //rooms 3,5,6,9,10,11,14. need keys, maybe room 6 will lead down long path to nowhere
         public static void story()
         {
             switch (room)
@@ -92,28 +92,49 @@ namespace CommandGamePP1
                 case "1":
                     if (path == correctpath[room])
                     {
-                        Console.WriteLine("Correct path");
-                        room++;
+                        if (room != 11)
+                        {
+                            Console.WriteLine("Correct path");
+                            room++;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Door is locked"); //Stuck right now, need to work on key code to progress maze
+                        }
                     }
                     break;
                 case "2":
                     if (path == correctpath[room])
                     {
-                        Console.WriteLine("Correct path");
-                        room++;
+                        if (room != 9)
+                        {
+                            Console.WriteLine("Correct path");
+                            room++;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Door is locked"); //Stuck right now, need to work on key code to progress maze
+                        }
                     }
                     break;
                 case "3":
                     if (path == correctpath[room])
                     {
-                        Console.WriteLine("Correct path");
-                        room++;
+                        if (room != 5 && room != 10)
+                        {
+                            Console.WriteLine("Correct path");
+                            room++;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Door is locked"); //Stuck right now, need to work on key code to progress maze
+                        }
                     }
                     break;
                 case "4":
                     if (path == correctpath[room])
                     {
-                        if (room != 6)
+                        if (room != 3 && room != 6 && room != 14)
                         {
                             Console.WriteLine("Correct path");
                             room++;
