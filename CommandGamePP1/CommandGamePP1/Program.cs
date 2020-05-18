@@ -5,6 +5,7 @@ namespace CommandGamePP1
 {
     class Program
     {
+        public static int yellowkey = 0, redkey = 0, orangekey = 0, greenkey = 0;
         public static int room = 0;  //rooms 3,5,6,9,10,11,14. need keys, maybe room 6 will lead down long path to nowhere
         public static void story()
         {
