@@ -161,11 +161,32 @@ namespace CommandGamePP1
                     break;
             }                 // If you pick the right path you reach the next 'room' in the maze and go again
         }
+        public static void search()
+        {
+            switch (room)
+            {
+                case 1:
+                    Console.WriteLine("You enter a dimly lit room");
+                    Console.WriteLine("Would you like to search the room?");
+                    string temp = Console.ReadLine();
+                    switch (temp)
+                    {
+                        case "yes":
+                        case "Yes":
+                        case "y":
+                            Console.WriteLine("You find key or something");
+                            // then do yellowkey++ or whatever
+                            break;
+                    }
+                    break;
+            }
+        }
         static void Main(string[] args)
         {
 
             do
             {
+                search();
                 story();
                 choices();
                 Console.WriteLine();
