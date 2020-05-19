@@ -15,15 +15,15 @@ namespace CommandGamePP1
                     break;
                 case 1:
                     Console.WriteLine("Select from the following:    ");
-                    Console.WriteLine("1) Red door.  2) Orange door.  3) Yellow door.  4) Green door.  5) Search room.  6) Go back. ");
+                    Console.WriteLine("1) Orange door.  2) Yellow door.  3) Green door.  4) Red door.  5) Search room.  6) Go back. ");
                     break;
                 case 2:
                     Console.WriteLine("Select from the following:    ");
-                    Console.WriteLine("1) Red door.  2) Orange door.  3) Yellow door.  4) Green door.  5) Search room.  6) Go back. ");
+                    Console.WriteLine("1) Yellow door.  2) Green door.  3) Red door.  4) Orange door.  5) Search room.  6) Go back. ");
                     break;
                 case 3:
                     Console.WriteLine("Select from the following:    ");
-                    Console.WriteLine("1) Red door.  2) Orange door.  3) Yellow door.  4) Green door.  5) Search room.  6) Go back. ");
+                    Console.WriteLine("1) Green door.  2) Red door.  3) Orange door.  4) Yellow door.  5) Search room.  6) Go back. ");
                     break;
                 case 4:
                     Console.WriteLine("Select from the following:    ");
@@ -31,15 +31,15 @@ namespace CommandGamePP1
                     break;
                 case 5:
                     Console.WriteLine("Select from the following:    ");
-                    Console.WriteLine("1) Red door.  2) Orange door.  3) Yellow door.  4) Green door.  5) Search room.  6) Go back. ");
+                    Console.WriteLine("1) Orange door.  2) Yellow door.  3) Green door.  4) Red door.  5) Search room.  6) Go back. ");
                     break;
                 case 6:
                     Console.WriteLine("Select from the following:    ");
-                    Console.WriteLine("1) Red door.  2) Orange door.  3) Yellow door.  4) Green door.  5) Search room.  6) Go back. ");
+                    Console.WriteLine("1) Yellow door.  2) Green door.  3) Red door.  4) Orange door.   5) Search room.  6) Go back. ");
                     break;
                 case 7:
                     Console.WriteLine("Select from the following:    ");
-                    Console.WriteLine("1) Red door.  2) Orange door.  3) Yellow door.  4) Green door.  5) Search room.  6) Go back. ");
+                    Console.WriteLine("1) Green door.  2) Red door.  3) Orange door.  4) Yellow door.  5) Search room.  6) Go back. ");
                     break;
                 case 8:
                     Console.WriteLine("Select from the following:    ");
@@ -47,15 +47,15 @@ namespace CommandGamePP1
                     break;
                 case 9:
                     Console.WriteLine("Select from the following:    ");
-                    Console.WriteLine("1) Red door.  2) Orange door.  3) Yellow door.  4) Green door.  5) Search room.  6) Go back. ");
+                    Console.WriteLine("1) Orange door.  2) Yellow door.  3) Green door.  4) Red door.  5) Search room.  6) Go back. ");
                     break;
                 case 10:
                     Console.WriteLine("Select from the following:    ");
-                    Console.WriteLine("1) Red door.  2) Orange door.  3) Yellow door.  4) Green door.  5) Search room.  6) Go back. ");
+                    Console.WriteLine("1) Yellow door.  2) Green door.  3) Red door.  4) Orange door.  5) Search room.  6) Go back. ");
                     break;
                 case 11:
                     Console.WriteLine("Select from the following:    ");
-                    Console.WriteLine("1) Red door.  2) Orange door.  3) Yellow door.  4) Green door.  5) Search room.  6) Go back. ");
+                    Console.WriteLine("1) Green door.  2) Red door.  3) Orange door.  4) Yellow door.  5) Search room.  6) Go back. ");
                     break;
                 case 12:
                     Console.WriteLine("Select from the following:    ");
@@ -63,11 +63,11 @@ namespace CommandGamePP1
                     break;
                 case 13:
                     Console.WriteLine("Select from the following:    ");
-                    Console.WriteLine("1) Red door.  2) Orange door.  3) Yellow door.  4) Green door.  5) Search room.  6) go back. ");
+                    Console.WriteLine("1) Orange door.  2) Yellow door.  3) Green door.  4) Red door.  5) Search room.  6) go back. ");
                     break;
                 case 14:
                     Console.WriteLine("Select from the following:    ");
-                    Console.WriteLine("1) Gold  door. 2) Gold door. 3) Gold door. 4) Jeff 5) Search room. 6) Go back.");
+                    Console.WriteLine("1) Bronze  door. 2) Silver door. 3) Gold door. 4) Jeff 5) Search room. 6) Go back.");
                     break;
                 default:
                     Console.WriteLine("Pick a path. 1-6");
@@ -215,6 +215,8 @@ namespace CommandGamePP1
                     switch (room)
                     {
                         case 1:
+                        case 5:
+                        case 12:
                             if (orangekey == 0)
                             {
                                 Console.WriteLine("You find a orange key");
@@ -222,8 +224,20 @@ namespace CommandGamePP1
                             }
                             break;
                         case 4:
+                        case 7:
+                        case 10:
+                            if (redkey == 0)
+                            {
+                                Console.WriteLine("You find a red key");
+                                redkey++;
+                            }
                             break;
-                        case 5:
+                        case 6:
+                            if (greenkey == 0)
+                            {
+                                Console.WriteLine("You find a green key");
+                                greenkey++;
+                            }
                             break;
                         default:
                             Console.WriteLine("Room was empty");
@@ -251,12 +265,10 @@ namespace CommandGamePP1
                 choices();
                 Thread.Sleep(2000);
                 Console.Clear();
-            } while (room < 15);
+            } while (room <= 14);
             // You're struck in this maze until you get the right path to the end.
             Console.WriteLine("You reached the end of the maze");
             Console.ReadLine();
-            // In future can ask different questions not just "Pick a path. 1-6" depending on what room you're in
-            // also can stop moving to a different room(room++) if you didn't use an item (key or whatever)
         }
     }
 }
