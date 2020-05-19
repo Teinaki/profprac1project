@@ -69,9 +69,6 @@ namespace CommandGamePP1
                     Console.WriteLine("Select from the following:    ");
                     Console.WriteLine("1) Bronze  door. 2) Silver door. 3) Gold door. 4) Jeff 5) Search room. 6) Go back.");
                     break;
-                default:
-                    Console.WriteLine("Pick a path. 1-6");
-                    break;
 
             }
         }
