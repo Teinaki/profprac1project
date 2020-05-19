@@ -5,7 +5,7 @@ namespace CommandGamePP1
 {
     class Program
     {
-        public static int room = 0, orangekey = 0, greenkey = 0, redkey = 0, yellowkey = 0;  //rooms 3,5,6,9,10,11,14. need keys, maybe room 6 will lead down long path to nowhere
+        public static int room = 0, orangekey = 0, greenkey = 0, redkey = 0, yellowkey = 0, silverkey = 0;  //rooms 3,5,6,9,10,11,14. need keys, maybe room 6 will lead down long path to nowhere
         public static void story()
         {
             switch (room)
@@ -89,11 +89,11 @@ namespace CommandGamePP1
                         switch (room)
                         {
                             case 5:
-                                if (redkey >= 1)
+                                if (orangekey >= 1)
                                 {
-                                    Console.WriteLine("You use the redkey to unlock the door and proceed");
+                                    Console.WriteLine("You use the orangekey to unlock the door and proceed");
                                     room++;
-                                    redkey--;
+                                    orangekey--;
                                 }
                                 else
                                 {
@@ -101,11 +101,11 @@ namespace CommandGamePP1
                                 }
                                 break;
                             case 9:
-                                if (redkey >= 1)
+                                if (orangekey >= 1)
                                 {
-                                    Console.WriteLine("You use the redkey to unlock the door and proceed");
+                                    Console.WriteLine("You use the orangekey to unlock the door and proceed");
                                     room++;
-                                    redkey--;
+                                    orangekey--;
                                 }
                                 else
                                 {
@@ -113,11 +113,11 @@ namespace CommandGamePP1
                                 }
                                 break;
                             case 11:
-                                if (redkey >= 1)
+                                if (greenkey >= 1)
                                 {
-                                    Console.WriteLine("You use the redkey to unlock the door and proceed");
+                                    Console.WriteLine("You use the greenkey to unlock the door and proceed");
                                     room++;
-                                    redkey--;
+                                    greenkey--;
                                 }
                                 else
                                 {
@@ -129,6 +129,10 @@ namespace CommandGamePP1
                                 room++;
                                 break;
                         }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Door leads to nowhere");
                     }
                     break;
                 case "2":
@@ -137,64 +141,9 @@ namespace CommandGamePP1
                         switch (room)
                         {
                             case 3:
-                                if (orangekey >= 1)
+                                if (redkey >= 1)
                                 {
-                                    Console.WriteLine("You use the orange to unlock the door and proceed");
-                                    room++;
-                                    orangekey--;
-                                }
-                                else
-                                {
-                                    Console.WriteLine("Door is locked");
-                                }
-                                break;
-                            case 6:
-                                if (orangekey >= 1)
-                                {
-                                    Console.WriteLine("You use the orange to unlock the door and proceed");
-                                    room++;
-                                    orangekey--;
-                                }
-                                else
-                                {
-                                    Console.WriteLine("Door is locked");
-                                }
-                                break;
-                            case 14:
-                                if (orangekey >= 1)
-                                {
-                                    Console.WriteLine("You use the orange to unlock the door and proceed");
-                                    room++;
-                                    orangekey--;
-                                }
-                                else
-                                {
-                                    Console.WriteLine("Door is locked");
-                                }
-                                break;
-                            default:
-                                Console.WriteLine("You proceed to the next room");
-                                room++;
-                                break;
-                        }
-                    }
-                    break;
-                case "3":
-                    if (path == correctpath[room])
-                    {
-                        Console.WriteLine("You proceed to the next room");
-                        room++;
-                    }
-                    break;
-                case "4":
-                    if (path == correctpath[room])
-                    {
-                        switch (room)
-                        {
-                            case 10:
-                                if (greenkey >= 1)
-                                {
-                                    Console.WriteLine("You use the greenkey to unlock the door");
+                                    Console.WriteLine("You use the red key to unlock the door and proceed");
                                     room++;
                                     redkey--;
                                 }
@@ -203,40 +152,113 @@ namespace CommandGamePP1
                                     Console.WriteLine("Door is locked");
                                 }
                                 break;
+                            case 6:
+                                if (greenkey >= 1)
+                                {
+                                    Console.WriteLine("You use the green key to unlock the door and proceed");
+                                    room++;
+                                    greenkey--;
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Door is locked");
+                                }
+                                break;
+                            case 14:
+                                if (silverkey >= 1)
+                                {
+                                    Console.WriteLine("You use the silver key to unlock the door and proceed");
+                                    room++;
+                                    silverkey--;
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Door is locked");
+                                }
+                                break;
                             default:
                                 Console.WriteLine("You proceed to the next room");
                                 room++;
                                 break;
                         }
                     }
+                    else
+                    {
+                        Console.WriteLine("Door leads to nowhere");
+                    }
+                    break;
+                case "3":
+                    if (path == correctpath[room])
+                    {
+                        Console.WriteLine("You proceed to the next room");
+                        room++;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Door leads to nowhere");
+                    }
+                    break;
+                case "4":
+                    if (path == correctpath[room])
+                    {
+                        switch (room)
+                        {
+                            case 10:
+                                if (orangekey >= 1)
+                                {
+                                    Console.WriteLine("You use the orange key to unlock the door");
+                                    room++;
+                                    orangekey--;
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Door is locked");
+                                }
+                                break;
+                            default:
+                                Console.WriteLine("You proceed to the next room");
+                                room++;
+                                break;
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Door leads to nowhere");
+                    }
                     break;
                 case "5":
                     Console.WriteLine("You search the room");
                     switch (room)
                     {
-                        case 1:
-                        case 5:
-                        case 12:
-                            if (orangekey == 0)
+                        case 4:
+                        case 6:
+                        case 10:
+                            if (orangekey <= 2)
                             {
                                 Console.WriteLine("You find a orange key");
                                 orangekey++;
                             }
                             break;
-                        case 4:
-                        case 7:
-                        case 10:
-                            if (redkey == 0)
+                        case 1:
+                            if (redkey <= 2)
                             {
                                 Console.WriteLine("You find a red key");
                                 redkey++;
                             }
                             break;
-                        case 6:
-                            if (greenkey == 0)
+                        case 5:
+                        case 9:
+                            if (greenkey <= 2)
                             {
                                 Console.WriteLine("You find a green key");
                                 greenkey++;
+                            }
+                            break;
+                        case 12:
+                            if (silverkey <= 2)
+                            {
+                                Console.WriteLine("You find a silver key");
+                                silverkey++;
                             }
                             break;
                         default:
@@ -261,6 +283,7 @@ namespace CommandGamePP1
 
             do
             {
+                Console.WriteLine($"Room {room}");
                 story();
                 choices();
                 Thread.Sleep(2000);
